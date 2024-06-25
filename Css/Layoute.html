@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: auto;
+            box-sizing: border-box;
+            text-align: center;
+            
+        }
+        .table{
+            width: 700px;
+            height: 500px;
+            background-color: rgb(0, 255, 247);
+            border: 5px solid white;
+        }
+        .table .table1{
+            width: 100%;
+            height: 10%;
+            background-color: orange;
+            border: 5px solid white;
+            color: white;
+            font-size: 20px;
+            justify-content: center;
+            display: flex;
+            
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .table .table2{
+            width: 100%;
+            height: 80%;
+            background-color: green;
+            border: 5px solid white;
+        }
+        .table .table2 .box1{
+            width: 35%;
+            height: 100%;
+            background-color: rgb(246, 92, 35);
+            float: left;
+            border-right: 10px solid white;
+        }
+        .table .table2 .box2{
+            width: 65%;
+            height: 100%;
+            background-color: rgb(35, 162, 44);
+            float: left;
+        }
+       .table .table2 .box2 .boxm{
+            width: 100%;
+            height: 50%;
+            background-color:rgb(194, 10, 10) ;
+            border-bottom: 5px solid white;
+       }
+       .table .table2 .box2 .boxp{
+            width: 50%;
+            height: 50%;
+            background-color: rgb(255, 68, 227);
+            float: left;
+            border-top: 5px solid white;
+            border-right: 5px solid white;
+       }
+       .table .table2 .box2 .boxn{
+            width: 50%;
+            height: 50%;
+            background-color: rgb(255, 68, 227);
+            float: right;
+            border-left: 5px solid white;
+            border-top: 5px solid white;
+       }
+        .table .table3{
+            width: 100%;
+            height: 10%;
+            background-color: orange;
+            border: 5px solid white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="table">
+        <div class="table1">HEADER</div>
+        <div class="table2">
+            <div class="box1"></div>
+            <div class="box2">
+                <div class="boxm"></div>
+                <div class="boxp"></div>
+                <div class="boxn"></div>
+            </div>
+        </div>
+        <div class="table3"></div>
+    </div>
+</body>
+</html>

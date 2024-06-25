@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.table{
+    width: 100%;
+    height: 695px;
+    background-color: aquamarine;
+    background-image: linear-gradient(rgb(0, 0, 0,0.7),rgb(0, 0, 0,0.7)),url(../imag/house.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.table h1{
+    color: white;
+    font-size: 60px;
+}
+.menu{
+    width: 100%;
+    height: 15%;
+    /* background-color: white; */
+    display: flex;
+    position: relative;
+    padding-left: 70px;
+    position: absolute;
+    top: 0;
+}
+
+.table .menu .left{
+    width: 10%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.table .menu .left h2{
+    cursor: pointer;
+    color: white;
+}
+.table .menu .right{
+    width: 40%;
+    height: 100%;
+    /* background-color: brown; */
+    position: absolute;
+    right: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table .menu .right ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table .menu .right ul li{
+    list-style: none;
+}
+.table .menu .right ul li a{
+    text-decoration: none;
+    margin-right: 27px;
+    color: white;
+    font-size: 17px;
+}
+
+.table .text{
+    width: 40%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    position: absolute;
+    bottom: 150px;
+}
+.table .text p{
+    color: white;
+    position: absolute;
+}
+.table .text .y p{
+    position: absolute;
+    bottom: 110px;
+    right: 180px;
+}
+.table .text .but{
+    position: absolute;
+    bottom: 50px;
+}
+#btn1{
+    width: 150px;
+    padding: 9px;
+    border-radius: 40px;
+    border: 3px solid green;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    margin-right: 10px;
+    position: relative;
+    z-index: 2;
+}
+#btn2{
+    width: 150px;
+    padding: 9px;
+    border-radius: 40px;
+    border: 3px solid green;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+#btn1::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: green;
+    left: 0;
+    top: 0;
+    border-radius: 40px;
+    transition: 0.7s;
+    z-index: -1;
+    overflow: hidden;
+}
+#btn1:hover::before {
+    width: 100%;
+    /* height: 100%;
+    background-color: green;
+    transition: 0.7s;
+    z-index: 1;
+    border-radius: 40px; */
+}
+#btn2::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: green;
+    left: 0;
+    top: 0;
+    border-radius: 40px;
+    transition: 0.7s;
+    z-index: -1;
+    overflow: hidden;
+}
+#btn2:hover::before {
+    width: 100%;
+    /* height: 100%;
+    background-color: green;
+    transition: 0.7s;
+    z-index: 1;
+    border-radius: 40px; */
+}
+/* #btn1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    left: 0;
+    top: 0;
+    border-radius: 40px;
+}  */
+

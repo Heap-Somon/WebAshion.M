@@ -1,0 +1,3270 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 85px;
+    /* background-color: aqua; */
+    padding: 0px 40px;
+    display: flex;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.153);
+}
+.header .logo{
+    width: 25%;
+    height: 100%;
+    /* background-color: bisque; */
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+.header .logo img{
+    width: 30%;
+    height: 35%;
+    /* object-fit: cover; */
+}
+.header .menu{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(255, 255, 255); */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+}
+.header .menu ul{
+    display: flex;
+}
+.header .menu ul li{
+    list-style: none;
+}
+
+.header .menu ul li a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: black;
+    position: relative;
+    transition: 0.5s;
+    font-family: "Open Sans", sans-serif;
+}
+#home{
+    position: relative;
+}
+#home::before{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: brown;
+    left: 0;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.0);
+    position: absolute;
+    left: 37%;
+    top: 70%;
+}
+#pages{
+    
+}
+#pages:hover .box{
+    background-color: black;
+    top: 0;
+    left: 70%;
+    z-index: 10;
+    position: absolute;
+    left: 37%;
+    top: 70%;
+}
+.header .menu ul li a::before{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background-color: brown;
+    /* left: 0; */
+    right: 50%;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.header .menu ul li a:hover::before{
+    width: 50%;
+    height: 2px;
+    transition: 0.5s;
+}
+.header .menu ul li a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background-color: brown;
+    /* left: 0; */
+    left: 50%;
+    transition: 0.5s;
+    bottom: -5px;
+}
+.header .menu ul li a:hover::after{
+    width: 50%;
+    height: 2px;
+    transition: 0.5s;
+}
+.header .search{
+    width: 25%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    justify-content: right;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header .search ul{
+    display: flex;
+}
+.header .search ul li{
+    list-style: none;
+    color: black;
+}
+#login{
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+.header .search ul li {
+    font-size: 22px;
+}
+.header .search ul li a{
+    text-decoration: none;
+    margin-right: 20px;
+    
+}
+.header .search ul li .num{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    top: 20%;
+    right: 13%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .search ul li .num h2{
+    font-size: 14px;
+    color: white;
+}
+/* ==== num1 */
+.header .search ul li .num2{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .search ul li .num2 h2{
+    font-size: 14px;
+    color: white;
+}
+/* ========= */
+/*  ==== trend*/
+.trend{
+    width: 100%;
+    height: 90vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+.trend .left{
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    position: relative;
+}
+.trend .left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ====== Text */
+.trend .left .text{
+    width: 100%;
+    height: 30%;
+    /* background-color: rgba(137, 43, 226, 0.318); */
+    position: absolute;
+    top: 40%;
+    padding: 0px 70px;
+}
+.trend .left .text h1{
+    position: absolute;
+    font-family: "Dancing Script", cursive;
+    font-size: 60px;
+}
+.trend .left .text p{
+    position: absolute;
+    bottom: 30%;
+    font-family: "Open Sans", sans-serif;
+}
+.trend .left .text ul li{
+    list-style: none;
+}
+.trend .left .text ul li a{
+    text-decoration: none;
+    position: absolute;
+    bottom: 10%;
+    font-family: "Open Sans", sans-serif;
+    
+}
+.trend .left .text ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: brown;
+}
+/* End text============= */
+.trend .middle{
+    width: 24%;
+    height: 100%;
+    /* background-color: blue; */
+    /* display: flex; */
+}
+.trend .middle .up{
+    width: 100%;
+    height: 49%;
+    /* background-color: orange; */
+    margin-right: 0;
+    position: relative;
+}
+.trend .middle .up img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.trend .middle .up .text{
+    width: 100%;
+    height: 30%;
+    /* background-color: rgba(0, 0, 255, 0.29); */
+    position: absolute;
+    top:37% ;
+    padding: 0px 35px;
+
+    
+}
+.trend .middle .up .text h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 23px;
+}
+.trend .middle .up p{
+    position: absolute;
+    bottom: 42%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+}
+.trend .middle .up ul{
+    position: absolute;
+    bottom: 10%;
+}
+.trend .middle .up ul li{
+    list-style: none;
+}
+.trend .middle .up ul li a{
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+.trend .middle .text ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: brown;
+}
+.trend .middle .down{
+    width: 100%;
+    height: 49%;
+    /* background-color: rgb(12, 43, 23); */
+    margin-top:3.5%;
+    position: relative;
+}
+.trend .middle .down img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* position: absolute; */
+}
+.trend .middle .down .text{
+    width: 100%;
+    height: 30%;
+    /* background-color: rgba(0, 0, 255, 0.29); */
+    position: absolute;
+    top:37% ;
+    padding: 0px 35px;
+
+    
+}
+.trend .middle .down .text h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 23px;
+}
+.trend .middle .down p{
+    position: absolute;
+    bottom: 42%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+}
+.trend .middle .down ul{
+    position: absolute;
+    bottom: 10%;
+}
+.trend .middle .down ul li{
+    list-style: none;
+}
+.trend .middle .down ul li a{
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+.trend .middle .down .text ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: brown;
+}
+.trend .right{
+    width: 24%;
+    height: 100%;
+    /* background-color: blue; */
+}
+.trend .right .up{
+    width: 100%;
+    height: 49%;
+    /* background-color: orange; */
+    margin-right: 0;
+    position: relative;
+}
+.trend .right .up .text{
+    width: 100%;
+    height: 30%;
+    /* background-color: rgba(0, 0, 255, 0.29); */
+    position: absolute;
+    top:37% ;
+    padding: 0px 35px;
+
+    
+}
+.trend .right .up .text h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 23px;
+}
+.trend .right .up p{
+    position: absolute;
+    bottom: 42%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+}
+.trend .right .up ul{
+    position: absolute;
+    bottom: 10%;
+}
+.trend .right .up ul li{
+    list-style: none;
+}
+.trend .right .up ul li a{
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+.trend .right .text ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: brown;
+}
+.trend .right .up img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.trend .right .down{
+    width: 100%;
+    height: 49%;
+    /* background-color: rgb(12, 43, 23); */
+    margin-top:3.5%;
+    position: relative;
+}
+.trend .right .down img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}.trend .right .down .text{
+    width: 100%;
+    height: 30%;
+    /* background-color: rgba(0, 0, 255, 0.29); */
+    position: absolute;
+    top:37% ;
+    padding: 0px 35px;
+
+    
+}
+.trend .right .down .text h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 23px;
+}
+.trend .right .down p{
+    position: absolute;
+    bottom: 42%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+}
+.trend .right .down ul{
+    position: absolute;
+    bottom: 10%;
+}
+.trend .right .down ul li{
+    list-style: none;
+}
+.trend .right .down ul li a{
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+.trend .right .down .text ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: brown;
+}
+/* ============= Product */
+.product{
+    width: 100%;
+    height: 165vh;
+    /* background-color: gold; */
+    padding: 20px 200px;
+}
+.product .menu{
+    width: 100%;
+    height: 10%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product .menu .Aboutproduct{
+    width: 25%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.product .menu .choice{
+    width: 50%;
+    height: 100%;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.product .menu .choice ul{
+    display: flex;
+}
+.product .menu .choice ul li{
+    list-style-type:none;
+}
+.product .menu .choice ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 37px;
+}
+/* =============== fashion 1 */
+.product .fashion1{
+    width: 100%;
+    height: 45%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    border: 20px 0px;
+}
+.product .fashion1 .pro1{
+    width: 23%;
+    height: 100%;
+    /* background-color: brown; */
+     /* position: relative;  */
+     
+    
+}
+/* =================== Pro1 */
+.product .fashion1 .pro1 .up{
+    width: 100%;
+    height: 75%;
+    background-color: bisque;
+    position: relative;
+    overflow: hidden;
+}
+.product .fashion1 .pro1 .up img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Hover================== */
+.product .fashion1 .pro1 .up .style{
+    width: 100%;
+    height: 20%;
+    background-color: red; 
+    position: absolute;
+    bottom: -20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    transition: 0.5s;
+}
+.product .fashion1 .pro1:hover .up .style{
+    bottom: 4%;
+    transition: 0.5s;
+}
+.product .fashion1 .pro1 .up .style .left{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.product .fashion1 .pro1 .up .style .left:hover{
+    background-color: red;
+}
+.product .fashion1 .pro1 .up .style .left:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .fashion1 .pro1 .up .style .left{
+    color: rgb(0, 0, 0);
+    
+    /* transition: 0.4s; */
+}
+.product .fashion1 .pro1 .up .style .mid{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.product .fashion1 .pro1 .up .style .mid:hover{
+    background-color: red;
+}
+.product .fashion1 .pro1 .up .style .mid:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .fashion1 .pro1 .up .style .mid{
+    color: rgb(0, 0, 0);
+    
+    /* transition: 0.4s; */
+}
+.product .fashion1 .pro1 .up .style .right{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.product .fashion1 .pro1 .up .style .right:hover{
+    background-color: red;
+}
+.product .fashion1 .pro1 .up .style .right:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .fashion1 .pro1 .up .style .right{
+    color: rgb(0, 0, 0);
+}
+/* ======================== */
+.product .fashion1 .pro1 .down{
+    width: 100%;
+    height: 25%;
+    /* background-color: blueviolet; */
+    position: relative;
+    
+    /* position: absolute; */
+}
+.product .fashion1 .pro1 .down ul{
+    position: absolute;
+    top: 30%;
+    left: 21%;
+}
+.product .fashion1 .pro1 .down ul li{
+    list-style: none;
+}
+.product .fashion1 .pro1 .down ul li a{
+    text-decoration: none;
+}
+.product .fashion1 .pro1 .down .stars{
+    width: 100%;
+    height: 5%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    color: gold;
+}
+.product .fashion1 .pro1 .down h1{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    font-size: 20px;
+}
+.product .fashion1 .pro2{
+    width: 23%;
+    height: 100%;
+    /* background-color: brown; */
+}
+/* ============ pro2 */
+.product .fashion1 .pro2 .up{
+    width: 100%;
+    height: 75%;
+    background-color: bisque;
+    position: relative;
+    overflow: hidden;
+}
+.product .fashion1 .pro2 .up img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Hover================== */
+.product .fashion1 .pro2 .up .style{
+    width: 100%;
+    height: 20%;
+    /* background-color: red;  */
+    position: absolute;
+    bottom: -20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    transition: 0.5s;
+}
+.product .fashion1 .pro2:hover .up .style{
+    bottom: 4%;
+    transition: 0.5s;
+}
+.product .fashion1 .pro2 .up .style .left{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.product .fashion1 .pro2 .up .style .left:hover{
+    background-color: red;
+}
+.product .fashion1 .pro2 .up .style .left:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .fashion1 .pro2 .up .style .left{
+    color: rgb(0, 0, 0);
+    
+    /* transition: 0.4s; */
+}
+.product .fashion1 .pro2 .up .style .mid{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.product .fashion1 .pro2 .up .style .mid:hover{
+    background-color: red;
+}
+.product .fashion1 .pro2 .up .style .mid:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .fashion1 .pro2 .up .style .mid{
+    color: rgb(0, 0, 0);
+    
+    /* transition: 0.4s; */
+}
+.product .fashion1 .pro2 .up .style .right{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.product .fashion1 .pro2 .up .style .right:hover{
+    background-color: red;
+}
+.product .fashion1 .pro2 .up .style .right:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .fashion1 .pro2 .up .style .right{
+    color: rgb(0, 0, 0);
+}
+/* ======================== */
+.product .fashion1 .pro2 .down{
+    width: 100%;
+    height: 25%;
+    /* background-color: blueviolet; */
+    position: relative;
+}
+.product .fashion1 .pro2 .down ul{
+    position: absolute;
+    top: 30%;
+    left: 21%;
+}
+.product .fashion1 .pro2 .down ul li{
+    list-style: none;
+}
+.product .fashion1 .pro2 .down ul li a{
+    text-decoration: none;
+}
+.product .fashion1 .pro2 .down .stars{
+    width: 100%;
+    height: 5%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    color: gold;
+}
+.product .fashion1 .pro2 .down h1{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    font-size: 20px;
+}
+/* ============== */
+.product .fashion1 .pro3{
+    width: 23%;
+    height: 100%;
+    /* background-color: brown; */
+}
+/* pro3================== */
+/* ============ pro3 */
+.product .fashion1 .pro3 .up{
+    width: 100%;
+    height: 75%;
+    background-color: bisque;
+    position: relative;
+    overflow: hidden;
+}
+.product .fashion1 .pro3 .up img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Hover================== */
+.product .fashion1 .pro3 .up .style{
+    width: 100%;
+    height: 20%;
+    /* background-color: red;  */
+    position: absolute;
+    bottom: -20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    transition: 0.5s;
+}
+.product .fashion1 .pro3:hover .up .style{
+    bottom: 4%;
+    transition: 0.5s;
+}
+.product .fashion1 .pro3 .up .style .left{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.product .fashion1 .pro3 .up .style .left:hover{
+    background-color: red;
+}
+.product .fashion1 .pro3 .up .style .left:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .fashion1 .pro3 .up .style .left{
+    color: rgb(0, 0, 0);
+    
+    /* transition: 0.4s; */
+}
+.product .fashion1 .pro3 .up .style .mid{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.product .fashion1 .pro3 .up .style .mid:hover{
+    background-color: red;
+}
+.product .fashion1 .pro3 .up .style .mid:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .fashion1 .pro3 .up .style .mid{
+    color: rgb(0, 0, 0);
+    
+    /* transition: 0.4s; */
+}
+.product .fashion1 .pro3 .up .style .right{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.product .fashion1 .pro3 .up .style .right:hover{
+    background-color: red;
+}
+.product .fashion1 .pro3 .up .style .right:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .fashion1 .pro3 .up .style .right{
+    color: rgb(0, 0, 0);
+}
+/* =================================== */
+.product .fashion1 .pro3 .down{
+    width: 100%;
+    height: 25%;
+    /* background-color: blueviolet; */
+    position: relative;
+}
+.product .fashion1 .pro3 .down ul{
+    position: absolute;
+    top: 30%;
+    left: 21%;
+}
+.product .fashion1 .pro3 .down ul li{
+    list-style: none;
+}
+.product .fashion1 .pro3 .down ul li a{
+    text-decoration: none;
+}
+.product .fashion1 .pro3 .down .stars{
+    width: 100%;
+    height: 5%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    color: gold;
+}
+.product .fashion1 .pro3 .down h1{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    font-size: 20px;
+}
+/* ===================== */
+.product .fashion1 .pro4{
+    width: 23%;
+    height: 100%;
+    /* background-color: brown; */
+}
+/* ============ pro4 */
+.product .fashion1 .pro4 .up{
+    width: 100%;
+    height: 75%;
+    background-color: bisque;
+    position: relative;
+    overflow: hidden;
+}
+.product .fashion1 .pro4 .up img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Hover================= */
+.product .fashion1 .pro4 .up .style{
+    width: 100%;
+    height: 20%;
+    /* background-color: red;  */
+    position: absolute;
+    bottom: -20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    transition: 0.5s;
+}
+.product .fashion1 .pro4:hover .up .style{
+    bottom: 4%;
+    transition: 0.5s;
+}
+.product .fashion1 .pro4 .up .style .left{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.product .fashion1 .pro4 .up .style .left:hover{
+    background-color: red;
+}
+.product .fashion1 .pro4 .up .style .left:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .fashion1 .pro4 .up .style .left{
+    color: rgb(0, 0, 0);
+    
+    /* transition: 0.4s; */
+}
+.product .fashion1 .pro4 .up .style .mid{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.product .fashion1 .pro4 .up .style .mid:hover{
+    background-color: red;
+}
+.product .fashion1 .pro4 .up .style .mid:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .fashion1 .pro4 .up .style .mid{
+    color: rgb(0, 0, 0);
+    
+    /* transition: 0.4s; */
+}
+.product .fashion1 .pro4 .up .style .right{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.product .fashion1 .pro4 .up .style .right:hover{
+    background-color: red;
+}
+.product .fashion1 .pro4 .up .style .right:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .fashion1 .pro4 .up .style .right{
+    color: rgb(0, 0, 0);
+}
+/* =================================== */
+.product .fashion1 .pro4 .down{
+    width: 100%;
+    height: 25%;
+    /* background-color: blueviolet; */
+    position: relative;
+}
+.product .fashion1 .pro4 .down ul{
+    position: absolute;
+    top: 30%;
+    left: 21%;
+}
+.product .fashion1 .pro4 .down ul li{
+    list-style: none;
+}
+.product .fashion1 .pro4 .down ul li a{
+    text-decoration: none;
+}
+.product .fashion1 .pro4 .down .stars{
+    width: 100%;
+    height: 5%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    color: gold;
+}
+.product .fashion1 .pro4 .down h1{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    font-size: 20px;
+}
+/* =========================== */
+/* fashion 2=============== */
+.product .fashion2{
+    width: 100%;
+    height: 45%;
+    /* background-color: rgb(39, 0, 155); */
+    display: flex;
+    justify-content: space-between;
+}
+.product .fashion2 .pro1{
+    width: 23%;
+    height: 100%;
+    /* background-color: brown; */
+}
+
+/* .product .fashion2 .pro1::before{
+    width: 100px;
+    height: 100px;
+    color: black;
+} */
+/* ============ pro1 */
+.product .fashion2 .pro1 .up{
+    width: 100%;
+    height: 75%;
+    background-color: bisque;
+    position: relative;
+    overflow: hidden;
+}
+.product .fashion2 .pro1 .up img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Hover================== */
+.product .fashion2 .pro1 .up .style{
+    width: 100%;
+    height: 20%;
+    /* background-color: red;  */
+    position: absolute;
+    bottom: -20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    transition: 0.5s;
+}
+.product .fashion2 .pro1:hover .up .style{
+    bottom: 4%;
+    transition: 0.5s;
+}
+.product .fashion2 .pro1 .up .style .left{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.product .fashion2 .pro1 .up .style .left:hover{
+    background-color: red;
+}
+.product .fashion2 .pro1 .up .style .left:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .fashion2 .pro1 .up .style .left{
+    color: rgb(0, 0, 0);
+    
+    /* transition: 0.4s; */
+}
+.product .fashion2 .pro1 .up .style .mid{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.product .fashion2 .pro1 .up .style .mid:hover{
+    background-color: red;
+}
+.product .fashion2 .pro1 .up .style .mid:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .fashion2 .pro1 .up .style .mid{
+    color: rgb(0, 0, 0);
+    
+    /* transition: 0.4s; */
+}
+.product .fashion2 .pro1 .up .style .right{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.product .fashion2 .pro1 .up .style .right:hover{
+    background-color: red;
+}
+.product .fashion2 .pro1 .up .style .right:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .fashion2 .pro1 .up .style .right{
+    color: rgb(0, 0, 0);
+}
+/* =================================== */
+.product .fashion2 .pro1 .down{
+    width: 100%;
+    height: 25%;
+    /* background-color: blueviolet; */
+    position: relative;
+}
+.product .fashion2 .pro1 .down ul{
+    position: absolute;
+    top: 30%;
+    left: 21%;
+}
+.product .fashion2 .pro1 .down ul li{
+    list-style: none;
+}
+.product .fashion2 .pro1 .down ul li a{
+    text-decoration: none;
+}
+.product .fashion2 .pro1 .down .stars{
+    width: 100%;
+    height: 5%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    color: gold;
+}
+.product .fashion2 .pro1 .down h1{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    font-size: 20px;
+}
+.product .fashion2 .pro2{
+    width: 23%;
+    height: 100%;
+    /* background-color: brown; */
+}
+/* ============ pro2 */
+.product .fashion2 .pro2 .up{
+    width: 100%;
+    height: 75%;
+    background-color: bisque;
+    position: relative;
+    overflow: hidden;
+}
+.product .fashion2 .pro2 .up img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Hover================== */
+.product .fashion2 .pro2 .up .style{
+    width: 100%;
+    height: 20%;
+    /* background-color: red;  */
+    position: absolute;
+    bottom: -20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    transition: 0.5s;
+}
+.product .fashion2 .pro2:hover .up .style{
+    bottom: 4%;
+    transition: 0.5s;
+}
+.product .fashion2 .pro2 .up .style .left{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.product .fashion2 .pro2 .up .style .left:hover{
+    background-color: red;
+}
+.product .fashion2 .pro2 .up .style .left:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .fashion2 .pro2 .up .style .left{
+    color: rgb(0, 0, 0);
+    
+    /* transition: 0.4s; */
+}
+.product .fashion2 .pro2 .up .style .mid{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.product .fashion2 .pro2 .up .style .mid:hover{
+    background-color: red;
+}
+.product .fashion2 .pro2 .up .style .mid:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .fashion2 .pro2 .up .style .mid{
+    color: rgb(0, 0, 0);
+    
+    /* transition: 0.4s; */
+}
+.product .fashion2 .pro2 .up .style .right{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.product .fashion2 .pro2 .up .style .right:hover{
+    background-color: red;
+}
+.product .fashion2 .pro2 .up .style .right:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .fashion2 .pro2 .up .style .right{
+    color: rgb(0, 0, 0);
+}
+/* ================================== */
+.product .fashion2 .pro2 .down{
+    width: 100%;
+    height: 25%;
+    /* background-color: blueviolet; */
+    position: relative;
+}
+.product .fashion2 .pro2 .down ul{
+    position: absolute;
+    top: 30%;
+    left: 21%;
+}
+.product .fashion2 .pro2 .down ul li{
+    list-style: none;
+}
+.product .fashion2 .pro2 .down ul li a{
+    text-decoration: none;
+}
+.product .fashion2 .pro2 .down .stars{
+    width: 100%;
+    height: 5%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    color: gold;
+}
+.product .fashion2 .pro2 .down h1{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    font-size: 20px;
+}
+/* ==============*/
+.product .fashion2 .pro3{
+    width: 23%;
+    height: 100%;
+    /* background-color: brown; */
+}
+/* pro3================== */
+.product .fashion2 .pro3 .up{
+    width: 100%;
+    height: 75%;
+    background-color: bisque;
+    position: relative;
+    overflow: hidden;
+}
+.product .fashion2 .pro3 .up img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Hover================== */
+.product .fashion2 .pro3 .up .style{
+    width: 100%;
+    height: 20%;
+    /* background-color: red;  */
+    position: absolute;
+    bottom: -20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    transition: 0.5s;
+}
+.product .fashion2 .pro3:hover .up .style{
+    bottom: 4%;
+    transition: 0.5s;
+}
+.product .fashion2 .pro3 .up .style .left{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.product .fashion2 .pro3 .up .style .left:hover{
+    background-color: red;
+}
+.product .fashion2 .pro3 .up .style .left:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .fashion2 .pro3 .up .style .left{
+    color: rgb(0, 0, 0);
+    
+    /* transition: 0.4s; */
+}
+.product .fashion2 .pro3 .up .style .mid{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.product .fashion2 .pro3 .up .style .mid:hover{
+    background-color: red;
+}
+.product .fashion2 .pro3 .up .style .mid:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .fashion2 .pro3 .up .style .mid{
+    color: rgb(0, 0, 0);
+    
+    /* transition: 0.4s; */
+}
+.product .fashion2 .pro3 .up .style .right{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.product .fashion2 .pro3 .up .style .right:hover{
+    background-color: red;
+}
+.product .fashion2 .pro3 .up .style .right:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .fashion2 .pro3 .up .style .right{
+    color: rgb(0, 0, 0);
+}
+/* ================================== */
+.product .fashion2 .pro3 .down{
+    width: 100%;
+    height: 25%;
+    /* background-color: blueviolet; */
+    position: relative;
+}
+.product .fashion2 .pro3 .down ul{
+    position: absolute;
+    top: 30%;
+    left: 21%;
+}
+.product .fashion2 .pro3 .down ul li{
+    list-style: none;
+}
+.product .fashion2 .pro3 .down ul li a{
+    text-decoration: none;
+}
+.product .fashion2 .pro3 .down .stars{
+    width: 100%;
+    height: 5%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    color: gold;
+}
+.product .fashion2 .pro3 .down h1{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    font-size: 20px;
+}
+/* ===================== */
+.product .fashion2 .pro4{
+    width: 23%;
+    height: 100%;
+    /* background-color: brown; */
+}
+.product .fashion2 .pro4 .up{
+    width: 100%;
+    height: 75%;
+    background-color: bisque;
+}
+/* ============ pro2 */
+.product .fashion2 .pro4 .up{
+    width: 100%;
+    height: 75%;
+    background-color: bisque;
+    position: relative;
+    overflow: hidden;
+}
+.product .fashion2 .pro4 .up img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Hover================= */
+.product .fashion2 .pro4 .up .style{
+    width: 100%;
+    height: 20%;
+    /* background-color: red;  */
+    position: absolute;
+    bottom: -20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    transition: 0.5s;
+}
+.product .fashion2 .pro4:hover .up .style{
+    bottom: 4%;
+    transition: 0.5s;
+}
+.product .fashion2 .pro4 .up .style .left{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.product .fashion2 .pro4 .up .style .left:hover{
+    background-color: red;
+}
+.product .fashion2 .pro4 .up .style .left:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .fashion2 .pro4 .up .style .left{
+    color: rgb(0, 0, 0);
+    
+    /* transition: 0.4s; */
+}
+.product .fashion2 .pro4 .up .style .mid{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.product .fashion2 .pro4 .up .style .mid:hover{
+    background-color: red;
+}
+.product .fashion2 .pro4 .up .style .mid:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .fashion2 .pro4 .up .style .mid{
+    color: rgb(0, 0, 0);
+    
+    /* transition: 0.4s; */
+}
+.product .fashion2 .pro4 .up .style .right{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.product .fashion2 .pro4 .up .style .right:hover{
+    background-color: red;
+}
+.product .fashion2 .pro4 .up .style .right:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+.product .fashion2 .pro4 .up .style .right{
+    color: rgb(0, 0, 0);
+}
+/* ================================== */
+.product .fashion2 .pro4 .up img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product .fashion2 .pro4 .down{
+    width: 100%;
+    height: 25%;
+    /* background-color: blueviolet; */
+    position: relative;
+}
+.product .fashion2 .pro4 .down ul{
+    position: absolute;
+    top: 30%;
+    left: 21%;
+}
+.product .fashion2 .pro4 .down ul li{
+    list-style: none;
+}
+.product .fashion2 .pro4 .down ul li a{
+    text-decoration: none;
+}
+.product .fashion2 .pro4 .down .stars{
+    width: 100%;
+    height: 5%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    color: gold;
+}
+.product .fashion2 .pro4 .down h1{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    font-size: 20px;
+}
+/* ================== */
+.banner{
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+    position: relative;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner .text{
+    width: 50%;
+    height: 50%;
+    background-color: rgba(127, 255, 212, 0);
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    /* padding: 5% 0; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner .text .newtext{
+    width: 200%;
+    height: auto;
+    background-color: rgba(108, 11, 11, 0);
+    text-align: center;
+    display: flex;
+    animation-name: banners;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: 0.2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+    justify-content: space-between;
+    position: absolute;
+}
+.banner .text .newtext .blog1{
+    width: 33%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+}
+.banner .text .newtext .blog2{
+    width: 33%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+}
+.banner .text .newtext .blog3{
+    width: 33%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+}
+@keyframes banners{
+    0%{
+        transform: translateX(100%);
+        transition: 0.5s;
+    }
+    25%{
+        transform: translate(35%);
+        transition-delay: 5s;
+    }
+    50%{
+        transform: translate(0%);
+        transition-delay: 5s;
+    }
+    75%{
+        transform: translate(-35%);
+        transition-delay: 5s;
+    }
+    100%{
+        transform: translateX(-140%);
+        transition: 0.5s;
+    }
+}
+/* ======= ITEM */
+.item{
+    width: 100%;
+    height: 83vh;
+    /* background-color: green; */
+    padding: 80px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item .left{
+    width: 33%;
+    height: 100%;
+    /* background-color: blue; */
+}
+.item .left .up{
+    width: 100%;
+    height: 15%;
+    /* background-color: rgb(0, 171, 194); */
+    display: flex;
+    justify-content: left;
+}
+.item .left .up h1{
+    font-size: 21px;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+}
+.item .left .up h1::before{
+    content: "";
+    width: 65%;
+    height: 2px;
+    position: absolute;
+    background-color: red;
+    bottom: 45%;
+}
+/* ============ end of up*/
+/* ============  down */
+.item .left .down{
+    width: 100%;
+    height: 85%;
+    /* background-color: wheat; */
+    position: relative;
+}
+.item .left .down .pdt1{
+    width: 100%;
+    height: 25%;
+    /* background-color: blueviolet; */
+    display: flex;
+    position: absolute;
+    top: 3%;
+}
+.item .left .down .pdt1 .pdt1_le{
+    width: 25%;
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+.item .left .down .pdt1 .pdt1_le img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item .left .down .pdt1 .pdt1_ri{
+    width: 75%;
+    height: 100%;
+    /* background-color: rgb(1, 84, 56); */
+    position: relative;
+}
+.item .left .down .pdt1 .pdt1_ri h2{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    color: black;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+}
+.item .left .down .pdt1 .pdt1_ri .star{
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 35%;
+    font-size: 8px;
+    left: 10%;
+    color: gold;
+}
+.item .left .down .pdt1 .pdt1_ri h1{
+    position: absolute;
+    top: 55%;
+    font-size: 20px;
+    left: 10%;
+    font-family: "Open Sans", sans-serif;
+}
+/* =========== end of down */
+/* ============  down */
+.item .left .down{
+    width: 100%;
+    height: 85%;
+    /* background-color: wheat; */
+    position: relative;
+}
+.item .left .down .pdt2{
+    width: 100%;
+    height: 25%;
+    /* background-color: blueviolet; */
+    display: flex;
+    position: absolute;
+    top: 39%;
+}
+.item .left .down .pdt2 .pdt1_le{
+    width: 25%;
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+.item .left .down .pdt2 .pdt1_le img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item .left .down .pdt2 .pdt1_ri{
+    width: 75%;
+    height: 100%;
+    /* background-color: rgb(1, 84, 56); */
+    position: relative;
+}
+.item .left .down .pdt2 .pdt1_ri h2{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    color: black;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+}
+.item .left .down .pdt2 .pdt1_ri .star{
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 35%;
+    font-size: 8px;
+    left: 10%;
+    color: gold;
+}
+.item .left .down .pdt2 .pdt1_ri h1{
+    position: absolute;
+    top: 55%;
+    font-size: 20px;
+    left: 10%;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* ===== pdt3 */
+
+.item .left .down .pdt3{
+    width: 100%;
+    height: 25%;
+    /* background-color: blueviolet; */
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+.item .left .down .pdt3 .pdt1_le{
+    width: 25%;
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+.item .left .down .pdt3 .pdt1_le img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item .left .down .pdt3 .pdt1_ri{
+    width: 75%;
+    height: 100%;
+    /* background-color: rgb(1, 84, 56); */
+    position: relative;
+}
+.item .left .down .pdt3 .pdt1_ri h2{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    color: black;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+}
+.item .left .down .pdt3 .pdt1_ri .star{
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 35%;
+    font-size: 8px;
+    left: 10%;
+    color: gold;
+}
+.item .left .down .pdt3 .pdt1_ri h1{
+    position: absolute;
+    top: 55%;
+    font-size: 20px;
+    left: 10%;
+    font-family: "Open Sans", sans-serif;
+}
+/* =========== end of down */
+/* =========== end of down */
+/* ============== middle */
+.item .mid{
+    width: 33%;
+    height: 100%;
+    /* background-color: blue; */
+}
+.item .mid .up{
+    width: 100%;
+    height: 15%;
+    /* background-color: rgb(0, 171, 194); */
+    display: flex;
+    justify-content: left;
+}
+.item .mid .up h1{
+    font-size: 21px;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+}
+.item .mid .up h1::before{
+    content: "";
+    width: 65%;
+    height: 2px;
+    position: absolute;
+    background-color: red;
+    bottom: 45%;
+}
+/* ============ end of up*/
+/* ============  down */
+.item .mid .down{
+    width: 100%;
+    height: 85%;
+    /* background-color: wheat; */
+    position: relative;
+}
+.item .mid .down .pdt1{
+    width: 100%;
+    height: 25%;
+    /* background-color: blueviolet; */
+    display: flex;
+    position: absolute;
+    top: 3%;
+}
+.item .mid .down .pdt1 .pdt1_le{
+    width: 25%;
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+.item .mid .down .pdt1 .pdt1_le img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item .mid .down .pdt1 .pdt1_ri{
+    width: 75%;
+    height: 100%;
+    /* background-color: rgb(1, 84, 56); */
+    position: relative;
+}
+.item .mid .down .pdt1 .pdt1_ri h2{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    color: black;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+}
+.item .mid .down .pdt1 .pdt1_ri .star{
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 35%;
+    font-size: 8px;
+    left: 10%;
+    color: gold;
+}
+.item .mid .down .pdt1 .pdt1_ri h1{
+    position: absolute;
+    top: 55%;
+    font-size: 20px;
+    left: 10%;
+    font-family: "Open Sans", sans-serif;
+}
+/* =========== end of down */
+/* ============  down */
+.item .mid .down{
+    width: 100%;
+    height: 85%;
+    /* background-color: wheat; */
+    position: relative;
+}
+.item .mid .down .pdt2{
+    width: 100%;
+    height: 25%;
+    /* background-color: blueviolet; */
+    display: flex;
+    position: absolute;
+    top: 39%;
+}
+.item .mid .down .pdt2 .pdt1_le{
+    width: 25%;
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+.item .mid .down .pdt2 .pdt1_le img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item .mid .down .pdt2 .pdt1_ri{
+    width: 75%;
+    height: 100%;
+    /* background-color: rgb(1, 84, 56); */
+    position: relative;
+}
+.item .mid .down .pdt2 .pdt1_ri h2{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    color: black;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+}
+.item .mid .down .pdt2 .pdt1_ri .star{
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 55%;
+    font-size: 8px;
+    left: 10%;
+    color: gold;
+}
+.item .mid .down .pdt2 .pdt1_ri h1{
+    position: absolute;
+    top: 74%;
+    font-size: 20px;
+    left: 10%;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* ===== pdt3 */
+
+.item .mid .down .pdt3{
+    width: 100%;
+    height: 25%;
+    /* background-color: blueviolet; */
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+.item .mid .down .pdt3 .pdt1_le{
+    width: 25%;
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+.item .mid .down .pdt3 .pdt1_le img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item .mid .down .pdt3 .pdt1_ri{
+    width: 75%;
+    height: 100%;
+    /* background-color: rgb(1, 84, 56); */
+    position: relative;
+}
+.item .mid .down .pdt3 .pdt1_ri h2{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    color: black;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+}
+.item .mid .down .pdt3 .pdt1_ri .star{
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 35%;
+    font-size: 8px;
+    left: 10%;
+    color: gold;
+}
+.item .mid .down .pdt3 .pdt1_ri h1{
+    position: absolute;
+    top: 55%;
+    font-size: 20px;
+    left: 10%;
+    font-family: "Open Sans", sans-serif;
+}
+/* ============Right */
+.item .right{
+    width: 33%;
+    height: 100%;
+    /* background-color: blue; */
+}
+.item .right .up{
+    width: 100%;
+    height: 15%;
+    /* background-color: rgb(0, 171, 194); */
+    display: flex;
+    justify-content: left;
+}
+.item .right .up h1{
+    font-size: 21px;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+}
+.item .right .up h1::before{
+    content: "";
+    width: 65%;
+    height: 2px;
+    position: absolute;
+    background-color: red;
+    bottom: 45%;
+}
+/* ============ end of up*/
+/* ============  down */
+.item .right .down{
+    width: 100%;
+    height: 85%;
+    /* background-color: wheat; */
+    position: relative;
+}
+.item .right .down .pdt1{
+    width: 100%;
+    height: 25%;
+    /* background-color: blueviolet; */
+    display: flex;
+    position: absolute;
+    top: 3%;
+}
+.item .right .down .pdt1 .pdt1_le{
+    width: 25%;
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+.item .right .down .pdt1 .pdt1_le img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item .right .down .pdt1 .pdt1_ri{
+    width: 75%;
+    height: 100%;
+    /* background-color: rgb(1, 84, 56); */
+    position: relative;
+}
+.item .right .down .pdt1 .pdt1_ri h2{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    color: black;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+}
+.item .right .down .pdt1 .pdt1_ri .star{
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 35%;
+    font-size: 8px;
+    left: 10%;
+    color: gold;
+}
+.item .right .down .pdt1 .pdt1_ri h1{
+    position: absolute;
+    top: 55%;
+    font-size: 20px;
+    left: 10%;
+    font-family: "Open Sans", sans-serif;
+}
+/* =========== end of down */
+/* ============  down */
+.item .right .down{
+    width: 100%;
+    height: 85%;
+    /* background-color: wheat; */
+    position: relative;
+}
+.item .right .down .pdt2{
+    width: 100%;
+    height: 25%;
+    /* background-color: blueviolet; */
+    display: flex;
+    position: absolute;
+    top: 39%;
+}
+.item .right .down .pdt2 .pdt1_le{
+    width: 25%;
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+.item .right .down .pdt2 .pdt1_le img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item .right .down .pdt2 .pdt1_ri{
+    width: 75%;
+    height: 100%;
+    /* background-color: rgb(1, 84, 56); */
+    position: relative;
+}
+.item .right .down .pdt2 .pdt1_ri h2{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    color: black;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+}
+.item .right .down .pdt2 .pdt1_ri .star{
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 35%;
+    font-size: 8px;
+    left: 10%;
+    color: gold;
+}
+.item .right .down .pdt2 .pdt1_ri h1{
+    position: absolute;
+    top: 55%;
+    font-size: 20px;
+    left: 10%;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* ===== pdt3 */
+
+.item .right .down .pdt3{
+    width: 100%;
+    height: 25%;
+    /* background-color: blueviolet; */
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+.item .right .down .pdt3 .pdt1_le{
+    width: 25%;
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+.item .right .down .pdt3 .pdt1_le img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item .right .down .pdt3 .pdt1_ri{
+    width: 75%;
+    height: 100%;
+    /* background-color: rgb(1, 84, 56); */
+    position: relative;
+}
+.item .right .down .pdt3 .pdt1_ri h2{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    color: black;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+}
+.item .right .down .pdt3 .pdt1_ri .star{
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 35%;
+    font-size: 8px;
+    left: 10%;
+    color: gold;
+}
+.item .right .down .pdt3 .pdt1_ri h1{
+    position: absolute;
+    top: 55%;
+    font-size: 20px;
+    left: 10%;
+    font-family: "Open Sans", sans-serif;
+}
+/* ========= */
+.tt{
+    width: 100%;
+    height: 10vh;
+}
+.countdown{
+    width: 100%;
+    height: 85vh;
+    /* background-color: red; */
+    padding: 0px 200px;
+}
+.countdown .up{
+    width: 100%;
+    height: 67%;
+    /* background-color: black; */
+    display: flex;
+}
+.countdown .up .left{
+    width: 50%;
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+.countdown .up .left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.countdown .up .right{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(233, 233, 233);
+}
+.countdown .up .right .over{
+    width: 100%;
+    height: 55%;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.countdown .up .right .over .text{
+    width: 100%;
+    height: 50%;
+    /* background-color: rgba(0, 0, 255, 0.342); */
+    position: absolute;
+    top: 35%;
+}
+.countdown .up .right .over .text p{
+    position: absolute;
+    top: 0;
+    left: 44%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+}
+.countdown .up .right .over .text h1{
+    position: absolute;
+    top: 14%;
+    left: 27.5%;
+    font-size: 45px;
+    font-family: "Dancing Script", cursive;
+    color: brown;
+}
+.countdown .up .right .over .text .sold{
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.countdown .up .right .over .text .sold h2{
+    font-size: 15px;
+    margin-right: 10px;
+    font-family: "Open Sans", sans-serif;
+}
+.countdown .up .right .over .text .sold h3{
+    font-size: 25px;
+    font-family: "Open Sans", sans-serif;
+}
+.countdown .up .right .over .circle{
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 7%;
+}
+.countdown .up .right .under{
+    width: 100%;
+    height: 45%;
+    /* background-color: bisque;  */
+}
+.countdown .up .right .under .date{
+    width: 100%;
+    height: 45%;
+    /* padding: 30px; */
+    /* background-color: rgba(127, 255, 212, 0.356);  */
+    display: flex;
+    justify-content: center;
+
+    
+}
+.countdown .up .right .under .date .day{
+    width: 17%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+#day{
+    position: absolute;
+    left: 40px;
+    bottom: 25px;
+}
+.countdown .up .right .under .date .hour{
+    width: 17%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#hour{
+    position: absolute;
+    left: 40px;
+    bottom: 25px;
+}
+.countdown .up .right .under .date .min{
+    width: 17%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#min{
+    position: absolute;
+    left: 40px;
+    bottom: 25px;
+}
+.countdown .up .right .under .date .sec{
+    width: 17%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#sec{
+    position: absolute;
+    left: 40px;
+    bottom: 25px;
+}
+.countdown .up .right .under .date h1 {
+    
+}
+.countdown .up .right .under .shop{
+    width: 100%;
+    height: 17%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.countdown .up .right .under .shop h2{
+    font-size: 15px;
+}
+.countdown .up .right .under .date h3 {
+    margin-right: 20px;
+    
+}
+.countdown .down{
+    width: 100%;
+    height: 33%;
+    /* background-color: rgb(48, 233, 91); */
+    display: flex;
+}
+/* ===================== */
+.countdown .down .box1{
+    width: 25%;
+    height: 100%;
+    /* background-color: orange; */
+    display: flex;
+    align-items: center;
+}
+.countdown .down .box1 .pic{
+    width: 30%;
+    height: 40%;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.countdown .down .box1 .pic i{
+    font-size: 40px;
+    color:brown;
+}
+.countdown .down .box1 .help{
+    width: 70%;
+    height: 40%;
+    /* background-color: blanchedalmond; */
+}
+.countdown .down .box1 .help h2{
+    margin-top: 7%;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+}
+.countdown .down .box1 .help p{
+    padding: 5px 0px;
+    margin-bottom: 5%;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+/* ======================= */
+.countdown .down .box2{
+    width: 25%;
+    height: 100%;
+    /* background-color: rgb(0, 255, 89); */
+    display: flex;
+    align-items: center;
+}
+.countdown .down .box2 .pic{
+    width: 30%;
+    height: 40%;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.countdown .down .box2 .pic i{
+    font-size: 40px;
+    color:brown;
+}
+.countdown .down .box2 .help{
+    width: 70%;
+    height: 40%;
+    /* background-color: blanchedalmond; */
+}
+.countdown .down .box2 .help h2{
+    margin-top: 7%;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+.countdown .down .box2 .help p{
+    padding: 5px 0px;
+    margin-bottom: 5%;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+/* ======================== */
+.countdown .down .box3{
+    width: 25%;
+    height: 100%;
+    /* background-color: rgb(255, 0, 170); */
+    display: flex;
+    align-items: center;
+}
+.countdown .down .box3 .pic{
+    width: 30%;
+    height: 40%;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.countdown .down .box3 .pic i{
+    font-size: 40px;
+    color: brown;
+}
+.countdown .down .box3 .help{
+    width: 70%;
+    height: 40%;
+    /* background-color: blanchedalmond; */
+}
+.countdown .down .box3 .help h2{
+    margin-top: 7%;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+}
+.countdown .down .box3 .help p{
+    padding: 5px 0px;
+    margin-bottom: 5%;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+/* ============================= */
+.countdown .down .box4{
+    width: 25%;
+    height: 100%;
+    /* background-color: rgb(0, 217, 255); */
+    display: flex;
+    align-items: center;
+}
+.countdown .down .box4 .pic{
+    width: 30%;
+    height: 40%;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.countdown .down .box4 .pic i{
+    font-size: 40px;
+    color: brown;
+}
+.countdown .down .box4 .help{
+    width: 70%;
+    height: 40%;
+    /* background-color: blanchedalmond; */
+}
+.countdown .down .box4 .help h2{
+    margin-top: 7%;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+}
+.countdown .down .box4 .help p{
+    padding: 5px 0px;
+    margin-bottom: 5%;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+/* ============================ */
+.instargram{
+    width: 100%;
+    height: 50vh;
+    /* background-color: aqua; */
+    display: flex;
+}
+.instargram .obj1{
+    width: 17.5%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+.instargram .obj1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.instargram .obj1 .instar{
+    width: 100%;
+    height: 30%;
+    /* background-color: black; */
+}
+.instargram .obj1 .instar .logo{
+    width: 100%;
+    height: 50%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.instargram .obj1 .instar .logo i{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj1:hover .instar .logo i{
+    color: black;
+    transition: 0.3s;
+}
+.instargram .obj1 .instar .username{
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(255, 0, 0); */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.instargram .obj1 .instar .username h2{
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj1:hover .instar .username h2{
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj1:hover{
+    background-color: rgba(255, 255, 255, 0.814);
+    transition: 0.3s;
+}
+/* =========================== */
+.instargram .obj2{
+    width: 16.5%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+.instargram .obj2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.instargram .obj2 .instar{
+    width: 100%;
+    height: 30%;
+    /* background-color: black; */
+}
+.instargram .obj2 .instar .logo{
+    width: 100%;
+    height: 50%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.instargram .obj2 .instar .logo i{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj2:hover .instar .logo i{
+    color: black;
+    transition: 0.3s;
+}
+.instargram .obj2 .instar .username{
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(255, 0, 0); */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.instargram .obj2 .instar .username h2{
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj2:hover .instar .username h2{
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj2:hover{
+    background-color: rgba(255, 255, 255, 0.814);
+    transition: 0.3s;
+}
+/* =========================== */
+.instargram .obj3{
+    width: 16.5%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+.instargram .obj3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.instargram .obj3 .instar{
+    width: 100%;
+    height: 30%;
+    /* background-color: black; */
+}
+.instargram .obj3 .instar .logo{
+    width: 100%;
+    height: 50%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.instargram .obj3 .instar .logo i{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj3:hover .instar .logo i{
+    color: black;
+    transition: 0.3s;
+}
+.instargram .obj3 .instar .username{
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(255, 0, 0); */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.instargram .obj3 .instar .username h2{
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj3:hover .instar .username h2{
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj3:hover{
+    background-color: rgba(255, 255, 255, 0.814);
+    transition: 0.3s;
+}
+/* ========================= */
+.instargram .obj4{
+    width: 16.5%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+.instargram .obj4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.instargram .obj4 .instar{
+    width: 100%;
+    height: 30%;
+    /* background-color: black; */
+}
+.instargram .obj4 .instar .logo{
+    width: 100%;
+    height: 50%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.instargram .obj4 .instar .logo i{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj4:hover .instar .logo i{
+    color: black;
+    transition: 0.3s;
+}
+.instargram .obj4 .instar .username{
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(255, 0, 0); */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.instargram .obj4 .instar .username h2{
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj4:hover .instar .username h2{
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj4:hover{
+    background-color: rgba(255, 255, 255, 0.814);
+    transition: 0.3s;
+}
+/* ========================== */
+.instargram .obj5{
+    width: 16.5%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+.instargram .obj5 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.instargram .obj5 .instar{
+    width: 100%;
+    height: 30%;
+    /* background-color: black; */
+}
+.instargram .obj5 .instar .logo{
+    width: 100%;
+    height: 50%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.instargram .obj5 .instar .logo i{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj5:hover .instar .logo i{
+    color: black;
+    transition: 0.3s;
+}
+.instargram .obj5 .instar .username{
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(255, 0, 0); */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.instargram .obj5 .instar .username h2{
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj5:hover .instar .username h2{
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj5:hover{
+    background-color: rgba(255, 255, 255, 0.814);
+    transition: 0.3s;
+}
+/* ===================== */
+.instargram .obj6{
+    width: 16.5%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+.instargram .obj6 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.instargram .obj6 .instar{
+    width: 100%;
+    height: 30%;
+    /* background-color: black; */
+}
+.instargram .obj6 .instar .logo{
+    width: 100%;
+    height: 50%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.instargram .obj6 .instar .logo i{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj6:hover .instar .logo i{
+    color: black;
+    transition: 0.3s;
+}
+.instargram .obj6 .instar .username{
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(255, 0, 0); */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.instargram .obj6 .instar .username h2{
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj6:hover .instar .username h2{
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj6:hover{
+    background-color: rgba(255, 255, 255, 0.814);
+    transition: 0.3s;
+}
+/* =========================== */
+.final{
+    width: 100%;
+    height: 45vh;
+    /* background-color: orange; */
+    display: flex;
+    padding: 50px 200px;
+    position: relative;
+}
+.final .left{
+    width: 30%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    position: relative;
+} 
+.final .left p{
+    position: absolute;
+    top: 25%;
+    color: rgb(125, 125, 125);
+}
+.final .left .bank{
+    width: 100%;
+    height: 25%;
+    /* background-color: white; */
+    top: 60%;
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.final .left .bank .bk1{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.final .left .bank .bk1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.final .left .bank .bk2{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.final .left .bank .bk2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.final .left .bank .bk3{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.final .left .bank .bk3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.final .left .bank .bk4{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.final .left .bank .bk4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.final .left .bank .bk5{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+.final .left .bank .bk5 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ============================= */
+.final .mid1{
+    width: 20%;
+    height: 100%;
+    /* background-color: rgb(88, 0, 171); */
+    padding: 0px 20px;
+} 
+.final .mid1 .up{
+    width: 100%;
+    height: 15%;
+    /* background-color: aqua; */
+}
+.final .mid1 .up h2{
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+}
+.final .mid1 .down{
+    width: 100%;
+    height: 85%;
+    /* background-color: rgb(0, 127, 127); */
+}
+.final .mid1 .down ul li{
+    list-style: none;
+}
+.final .mid1 .down ul li a{
+    text-decoration: none;
+    padding: 5px 0px; 
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(125, 125, 125);
+}
+/* ===========================mid2 */
+.final .mid2{
+    width: 20%;
+    height: 100%;
+    /* background-color: rgb(106, 98, 113); */
+    padding: 0px 20px;
+} 
+.final .mid2 .up{
+    width: 100%;
+    height: 15%;
+    /* background-color: aqua; */
+}
+.final .mid2 .up h2{
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+}
+.final .mid2 .down{
+    width: 100%;
+    height: 85%;
+    /* background-color: rgb(0, 127, 127); */
+}
+.final .mid2 .down ul li{
+    list-style: none;
+}
+.final .mid2 .down ul li a{
+    text-decoration: none;
+    padding: 5px 0px; 
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(125, 125, 125);
+}
+/* =========================== */
+.final .right{
+    width: 30%;
+    height: 100%;
+    /* background-color: blueviolet; */
+} 
+.final .right .slatter{
+    width: 100%;
+    height: 15%;
+    /* background-color: orange; */
+    font-size: 11px;
+    font-family: "Open Sans", sans-serif;
+}
+.final .right .subscribe{
+    width: 100%;
+    height: 40%;
+    /* background-color: rgb(107, 71, 3); */
+    position: relative;
+}
+#email{
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 30px;
+    color: gray;
+    position: absolute;
+    top: 10%;
+    border: 1px solid rgba(128, 128, 128, 0.603);
+}
+#btn{
+    width: 45%;
+    padding: 13px 0px;
+    border-radius: 30px;
+    position: absolute;
+    z-index: 2;
+    right: 2.5px;
+    top: 12.3%;
+    border: none;
+    background-color: rgb(202, 4, 4);
+    color: white;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+}
+.final .right .icon{
+    width: 100%;
+    height: 17%;
+    /* background-color: rgb(153, 134, 98); */
+    display: flex;
+}
+.final .right .icon .icon1{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(221, 220, 220);
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.final .right .icon .icon2{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(221, 220, 220);
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}.final .right .icon .icon3{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(221, 220, 220);
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.final .right .icon .icon4{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(221, 220, 220);
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.final .right .icon .icon5{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(221, 220, 220);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.final::before{
+    content: "";
+    width: 74%;
+    height: 1px;
+    background-color: rgb(186, 186, 186,0.5);
+    position: absolute;
+    bottom: 0;
+    left: 13%;
+}
+.end{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end p{
+    margin-right: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: rgb(130, 130, 130);
+}
+.end i{
+    margin-right: 5px;
+    color: red;
+}
+.end ul li{
+    list-style: none;
+}
+.end ul li a{
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: rgb(130, 130, 130);
+}
+.end ul li a:hover{
+    color: red;
+}

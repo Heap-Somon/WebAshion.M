@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.Uber{
+    width: 175px;
+    height: 50px;
+    background-color: black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Uber h3{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+.Amazon{
+    width: 220px;
+    height: 45px;
+    background-color: rgb(255, 216, 20);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.Amazon h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+.Github{
+    width: 120px;
+    height: 50px;
+    background-color: rgb(46, 164, 79);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.Github h3{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+.boot{
+    width: 300px;
+    height: 100px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.boot .left{
+    width: 47%;
+    height: 50px;
+    background-color: rgb(121, 82, 179);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(121, 82, 179);
+}
+.boot .left h3{
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+.boot .right{
+    width: 47%;
+    height: 50px;
+    background-color: rgba(108, 117, 125, 0);
+    border: 2px solid rgb(108, 117, 125);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boot .right h3{
+    color: rgb(108, 117, 125);
+    font-family: "Roboto", sans-serif;
+}
+.linked{
+    width: 550px;
+    height: 100px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.linked .left{
+    width: 60%;
+    height: 45px;
+    background-color: rgb(10, 102, 194);
+    border-radius: 30px;
+    border: 2px solid rgb(10, 102, 194);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.linked .left h3{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 21px;
+}
+.linked .right{
+    width: 20%;
+    height: 45px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 65px;
+    border-radius: 30px;
+    border: 2px solid rgb(10, 102, 194);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.linked .right h3{
+    color: rgb(10, 102, 194);
+    font-family: "Roboto", sans-serif;
+    font-size: 21px;
+}
