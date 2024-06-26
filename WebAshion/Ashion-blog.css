@@ -1,0 +1,1320 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 85px;
+    /* background-color: aqua; */
+    padding: 0px 40px;
+    display: flex;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.153);
+}
+.header .logo{
+    width: 25%;
+    height: 100%;
+    /* background-color: bisque; */
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+.header .logo img{
+    width: 30%;
+    height: 35%;
+    /* object-fit: cover; */
+}
+.header .menu{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(255, 255, 255); */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.header .menu ul{
+    display: flex;
+}
+.header .menu ul li{
+    list-style: none;
+}
+
+.header .menu ul li a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: black;
+    position: relative;
+    transition: 0.5s;
+    font-family: "Open Sans", sans-serif;
+}
+#blog{
+    position: relative;
+}
+#blog::before{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: brown;
+    left: 0;
+}
+.header .menu ul li a::before{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background-color: brown;
+    /* left: 0; */
+    right: 50%;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.header .menu ul li a:hover::before{
+    width: 50%;
+    height: 2px;
+    transition: 0.5s;
+}
+.header .menu ul li a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background-color: brown;
+    /* left: 0; */
+    left: 50%;
+    transition: 0.5s;
+    bottom: -5px;
+}
+.header .menu ul li a:hover::after{
+    width: 50%;
+    height: 2px;
+    transition: 0.5s;
+}
+.header .search{
+    width: 25%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    justify-content: right;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header .search ul{
+    display: flex;
+}
+.header .search ul li{
+    list-style: none;
+    color: black;
+}
+#login{
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+.header .search ul li {
+    font-size: 22px;
+}
+.header .search ul li a{
+    text-decoration: none;
+    margin-right: 20px;
+    
+}
+.header .search ul li .num{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    top: 20%;
+    right: 13%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .search ul li .num h2{
+    font-size: 14px;
+    color: white;
+}
+/* ==== num1 */
+.header .search ul li .num2{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .search ul li .num2 h2{
+    font-size: 14px;
+    color: white;
+}
+/* ========= */
+.home{
+    width: 100%;
+    height: 15vh;
+    /* background-color: red; */
+    padding: 10px 200px;
+}
+.home .go-home{
+    width: 20%;
+    height: 80%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+}
+.home .go-home ul li{
+    list-style: none;
+}
+.home .go-home ul li a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: black;
+}
+#house{
+    font-size: 11px;
+}
+.home .go-home p{
+    margin-right: 10px;
+}
+/* =================== detail */
+.detail{
+    width: 100%;
+    height: 176vh;
+    /* background-color: red; */
+    padding: 10px 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.detail .left{
+    width: 31.5%;
+    height: 100%;
+    /* background-color: blue; */
+}
+/* -============= up */
+.detail .left .up{
+    width: 100%;
+    height: 48%;
+    /* background-color: brown; */
+    position: relative;
+}
+.detail .left .up .photo{
+    width: 100%;
+    height: 90%;
+    /* background-color: aquamarine; */
+}
+.detail .left .up .photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.detail .left .up .text{
+    width: 92%;
+    height: 20%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    padding: 20px 0px;
+
+}
+.detail .left .up .text h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+}
+.detail .left .up .text .small{
+    display: flex;
+    margin-top: 10px;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 18%;
+    /* background-color: blanchedalmond; */
+}
+.detail .left .up .text .small{
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+}
+/* =========================== */
+/* ========================== down */
+.detail .left .down{
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(141, 100, 100); */
+}
+.detail .left .down .over{
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(0, 119, 255); */
+    position: relative;
+}
+.detail .left .down .over .image{
+    width: 100%;
+    height: 78%;
+}
+.detail .left .down .over .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.detail .left .down .over .text{
+    width: 92%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    padding: 20px 0px;
+}
+.detail .left .down .over .text h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+}
+.detail .left .down .over .text .small{
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    display: flex;
+    margin-top: 10px;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 18%;
+}
+.detail .left .down .under{
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(162, 103, 103); */
+    position: relative;
+}
+.detail .left .down .under .image{
+    width: 100%;
+    height: 78%;
+}
+.detail .left .down .under .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.detail .left .down .under .text{
+    width: 92%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    padding: 20px 0px;
+}
+.detail .left .down .under .text h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+}
+.detail .left .down .under .text .small{
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    display: flex;
+    margin-top: 10px;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 18%;
+}
+/* ================================================================= */
+.detail .mid{
+    width: 31.5%;
+    height: 100%;
+    /* background-color: blue; */
+}
+/* ========= mid1 */
+.detail .mid .mid1{
+    width: 100%;
+    height: 25%;
+    position: relative;
+}
+.detail .mid .mid1 .image{
+    width: 100%;
+    height: 78%;
+}
+.detail .mid .mid1 .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.detail .mid .mid1 .text{
+    width: 92%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    padding: 20px 0px;
+}
+.detail .mid .mid1 .text h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+}
+.detail .mid .mid1 .text .small{
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    display: flex;
+    margin-top: 10px;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 18%;
+}
+/* ============== */
+/* ========= mid2 */
+.detail .mid .mid2{
+    width: 100%;
+    height: 25%;
+    position: relative;
+}
+.detail .mid .mid2 .image{
+    width: 100%;
+    height: 78%;
+}
+.detail .mid .mid2 .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.detail .mid .mid2 .text{
+    width: 92%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    padding: 20px 0px;
+}
+.detail .mid .mid2 .text h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+}
+.detail .mid .mid2 .text .small{
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    display: flex;
+    margin-top: 10px;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 18%;
+}
+/* ============== */
+/* ========= mid3 */
+.detail .mid .mid3{
+    width: 100%;
+    height: 25%;
+    position: relative;
+}
+.detail .mid .mid3 .image{
+    width: 100%;
+    height: 78%;
+}
+.detail .mid .mid3 .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.detail .mid .mid3 .text{
+    width: 92%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    padding: 20px 0px;
+}
+.detail .mid .mid3 .text h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+}
+.detail .mid .mid3 .text .small{
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    display: flex;
+    margin-top: 10px;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 18%;
+}
+/* ============== */
+/* ========= mid4 */
+.detail .mid .mid4{
+    width: 100%;
+    height: 25%;
+    position: relative;
+}
+.detail .mid .mid4 .image{
+    width: 100%;
+    height: 78%;
+}
+.detail .mid .mid4 .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.detail .mid .mid4 .text{
+    width: 92%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    padding: 20px 0px;
+}
+.detail .mid .mid4 .text h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+}
+.detail .mid .mid4 .text .small{
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    display: flex;
+    margin-top: 10px;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 18%;
+}
+/* ============== */
+.detail .right{
+    width: 31.5%;
+    height: 100%;
+    /* background-color: blue; */
+}
+/* ========= .right1 */
+.detail .right .right1{
+    width: 100%;
+    height: 25%;
+    position: relative;
+}
+.detail .right .right1 .image{
+    width: 100%;
+    height: 78%;
+}
+.detail .right .right1 .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.detail .right .right1 .text{
+    width: 92%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    padding: 20px 0px;
+}
+.detail .right .right1 .text h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+}
+.detail .right .right1 .text .small{
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    display: flex;
+    margin-top: 10px;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 18%;
+}
+/* ============== */
+/* ========= .right2 */
+.detail .right .right2{
+    width: 100%;
+    height: 25%;
+    position: relative;
+}
+.detail .right .right2 .image{
+    width: 100%;
+    height: 78%;
+}
+.detail .right .right2 .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.detail .right .right2 .text{
+    width: 92%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    padding: 20px 0px;
+}
+.detail .right .right2 .text h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+}
+.detail .right .right2 .text .small{
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    display: flex;
+    margin-top: 10px;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 18%;
+}
+/* ============== */
+/* -============= right3 */
+.detail .right .right3{
+    width: 100%;
+    height: 48%;
+    /* background-color: brown; */
+    position: relative;
+}
+.detail .right .right3 .photo{
+    width: 100%;
+    height: 90%;
+    background-color: aquamarine;
+}
+.detail .right .right3 .photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.detail .right .right3 .text{
+    width: 92%;
+    height: 20%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    padding: 20px 0px;
+
+}
+.detail .right .right3 .text h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+}
+.detail .right .right3 .text .small{
+    display: flex;
+    margin-top: 10px;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 18%;
+    /* background-color: blanchedalmond; */
+}
+.detail .right .right3 .text .small{
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+}
+/* ========== button */
+.buttons{
+    width: 100%;
+    height: 47px;
+    /* background-color: blueviolet; */
+     display: flex;
+    justify-content: center;
+    
+}
+#btn{
+    width: 320px;
+    padding: 11px 0px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(209, 213, 217,0.7);
+}
+/* ============= */
+.space{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+}
+/*  =================*/
+/* ============================ */
+.instargram{
+    width: 100%;
+    height: 50vh;
+    /* background-color: aqua; */
+    display: flex;
+}
+.instargram .obj1{
+    width: 17.5%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+.instargram .obj1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.instargram .obj1 .instar{
+    width: 100%;
+    height: 30%;
+    /* background-color: black; */
+}
+.instargram .obj1 .instar .logo{
+    width: 100%;
+    height: 50%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.instargram .obj1 .instar .logo i{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj1:hover .instar .logo i{
+    color: black;
+    transition: 0.3s;
+}
+.instargram .obj1 .instar .username{
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(255, 0, 0); */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.instargram .obj1 .instar .username h2{
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj1:hover .instar .username h2{
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj1:hover{
+    background-color: rgba(255, 255, 255, 0.814);
+    transition: 0.3s;
+}
+/* =========================== */
+.instargram .obj2{
+    width: 16.5%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+.instargram .obj2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.instargram .obj2 .instar{
+    width: 100%;
+    height: 30%;
+    /* background-color: black; */
+}
+.instargram .obj2 .instar .logo{
+    width: 100%;
+    height: 50%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.instargram .obj2 .instar .logo i{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj2:hover .instar .logo i{
+    color: black;
+    transition: 0.3s;
+}
+.instargram .obj2 .instar .username{
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(255, 0, 0); */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.instargram .obj2 .instar .username h2{
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj2:hover .instar .username h2{
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj2:hover{
+    background-color: rgba(255, 255, 255, 0.814);
+    transition: 0.3s;
+}
+/* =========================== */
+.instargram .obj3{
+    width: 16.5%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+.instargram .obj3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.instargram .obj3 .instar{
+    width: 100%;
+    height: 30%;
+    /* background-color: black; */
+}
+.instargram .obj3 .instar .logo{
+    width: 100%;
+    height: 50%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.instargram .obj3 .instar .logo i{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj3:hover .instar .logo i{
+    color: black;
+    transition: 0.3s;
+}
+.instargram .obj3 .instar .username{
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(255, 0, 0); */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.instargram .obj3 .instar .username h2{
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj3:hover .instar .username h2{
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj3:hover{
+    background-color: rgba(255, 255, 255, 0.814);
+    transition: 0.3s;
+}
+/* ========================= */
+.instargram .obj4{
+    width: 16.5%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+.instargram .obj4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.instargram .obj4 .instar{
+    width: 100%;
+    height: 30%;
+    /* background-color: black; */
+}
+.instargram .obj4 .instar .logo{
+    width: 100%;
+    height: 50%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.instargram .obj4 .instar .logo i{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj4:hover .instar .logo i{
+    color: black;
+    transition: 0.3s;
+}
+.instargram .obj4 .instar .username{
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(255, 0, 0); */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.instargram .obj4 .instar .username h2{
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj4:hover .instar .username h2{
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj4:hover{
+    background-color: rgba(255, 255, 255, 0.814);
+    transition: 0.3s;
+}
+/* ========================== */
+.instargram .obj5{
+    width: 16.5%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+.instargram .obj5 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.instargram .obj5 .instar{
+    width: 100%;
+    height: 30%;
+    /* background-color: black; */
+}
+.instargram .obj5 .instar .logo{
+    width: 100%;
+    height: 50%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.instargram .obj5 .instar .logo i{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj5:hover .instar .logo i{
+    color: black;
+    transition: 0.3s;
+}
+.instargram .obj5 .instar .username{
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(255, 0, 0); */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.instargram .obj5 .instar .username h2{
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj5:hover .instar .username h2{
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj5:hover{
+    background-color: rgba(255, 255, 255, 0.814);
+    transition: 0.3s;
+}
+/* ===================== */
+.instargram .obj6{
+    width: 16.5%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+.instargram .obj6 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.instargram .obj6 .instar{
+    width: 100%;
+    height: 30%;
+    /* background-color: black; */
+}
+.instargram .obj6 .instar .logo{
+    width: 100%;
+    height: 50%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.instargram .obj6 .instar .logo i{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj6:hover .instar .logo i{
+    color: black;
+    transition: 0.3s;
+}
+.instargram .obj6 .instar .username{
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(255, 0, 0); */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.instargram .obj6 .instar .username h2{
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj6:hover .instar .username h2{
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+.instargram .obj6:hover{
+    background-color: rgba(255, 255, 255, 0.814);
+    transition: 0.3s;
+}
+/* =========================== */
+.final{
+    width: 100%;
+    height: 45vh;
+    /* background-color: orange; */
+    display: flex;
+    padding: 50px 200px;
+    position: relative;
+}
+.final .left{
+    width: 30%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    position: relative;
+} 
+.final .left p{
+    position: absolute;
+    top: 25%;
+    color: rgb(125, 125, 125);
+}
+.final .left .bank{
+    width: 100%;
+    height: 25%;
+    /* background-color: white; */
+    top: 60%;
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.final .left .bank .bk1{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.final .left .bank .bk1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.final .left .bank .bk2{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.final .left .bank .bk2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.final .left .bank .bk3{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.final .left .bank .bk3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.final .left .bank .bk4{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.final .left .bank .bk4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.final .left .bank .bk5{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+.final .left .bank .bk5 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ============================= */
+.final .mid1{
+    width: 20%;
+    height: 100%;
+    /* background-color: rgb(88, 0, 171); */
+    padding: 0px 20px;
+} 
+.final .mid1 .up{
+    width: 100%;
+    height: 15%;
+    /* background-color: aqua; */
+}
+.final .mid1 .up h2{
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+}
+.final .mid1 .down{
+    width: 100%;
+    height: 85%;
+    /* background-color: rgb(0, 127, 127); */
+}
+.final .mid1 .down ul li{
+    list-style: none;
+}
+.final .mid1 .down ul li a{
+    text-decoration: none;
+    padding: 5px 0px; 
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(125, 125, 125);
+}
+/* ===========================mid2 */
+.final .mid2{
+    width: 20%;
+    height: 100%;
+    /* background-color: rgb(106, 98, 113); */
+    padding: 0px 20px;
+} 
+.final .mid2 .up{
+    width: 100%;
+    height: 15%;
+    /* background-color: aqua; */
+}
+.final .mid2 .up h2{
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+}
+.final .mid2 .down{
+    width: 100%;
+    height: 85%;
+    /* background-color: rgb(0, 127, 127); */
+}
+.final .mid2 .down ul li{
+    list-style: none;
+}
+.final .mid2 .down ul li a{
+    text-decoration: none;
+    padding: 5px 0px; 
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(125, 125, 125);
+}
+/* =========================== */
+.final .right{
+    width: 30%;
+    height: 100%;
+    /* background-color: blueviolet; */
+} 
+.final .right .slatter{
+    width: 100%;
+    height: 15%;
+    /* background-color: orange; */
+    font-size: 11px;
+    font-family: "Open Sans", sans-serif;
+}
+.final .right .subscribe{
+    width: 100%;
+    height: 40%;
+    /* background-color: rgb(107, 71, 3); */
+    position: relative;
+}
+#email{
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 30px;
+    color: gray;
+    position: absolute;
+    top: 10%;
+    border: 1px solid rgba(128, 128, 128, 0.603);
+}
+#btn2{
+    width: 45%;
+    padding: 13px 0px;
+    border-radius: 30px;
+    position: absolute;
+    z-index: 2;
+    right: 2.5px;
+    top: 12.3%;
+    border: none;
+    background-color: rgb(202, 4, 4);
+    color: white;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+}
+.final .right .icon{
+    width: 100%;
+    height: 17%;
+    /* background-color: rgb(153, 134, 98); */
+    display: flex;
+}
+.final .right .icon .icon1{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(221, 220, 220);
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.final .right .icon .icon2{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(221, 220, 220);
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}.final .right .icon .icon3{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(221, 220, 220);
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.final .right .icon .icon4{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(221, 220, 220);
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.final .right .icon .icon5{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(221, 220, 220);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.final::before{
+    content: "";
+    width: 74%;
+    height: 1px;
+    background-color: rgb(186, 186, 186,0.5);
+    position: absolute;
+    bottom: 0;
+    left: 13%;
+}
+.end{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end p{
+    margin-right: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: rgb(130, 130, 130);
+}
+.end i{
+    margin-right: 5px;
+    color: red;
+}
+.end ul li{
+    list-style: none;
+}
+.end ul li a{
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: rgb(130, 130, 130);
+}
+.end ul li a:hover{
+    color: red;
+}

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 85px;
+    /* background-color: aqua; */
+    padding: 0px 40px;
+    display: flex;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.153);
+}
+.header .logo{
+    width: 25%;
+    height: 100%;
+    /* background-color: bisque; */
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+.header .logo img{
+    width: 30%;
+    height: 35%;
+    /* object-fit: cover; */
+}
+.header .menu{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(255, 255, 255); */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.header .menu ul{
+    display: flex;
+}
+.header .menu ul li{
+    list-style: none;
+}
+
+.header .menu ul li a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: black;
+    position: relative;
+    transition: 0.5s;
+    font-family: "Open Sans", sans-serif;
+}
+.header .menu ul li a::before{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background-color: brown;
+    /* left: 0; */
+    right: 50%;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.header .menu ul li a:hover::before{
+    width: 50%;
+    height: 2px;
+    transition: 0.5s;
+}
+.header .menu ul li a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background-color: brown;
+    /* left: 0; */
+    left: 50%;
+    transition: 0.5s;
+    bottom: -5px;
+}
+.header .menu ul li a:hover::after{
+    width: 50%;
+    height: 2px;
+    transition: 0.5s;
+}
+.header .search{
+    width: 25%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    justify-content: right;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header .search ul{
+    display: flex;
+}
+.header .search ul li{
+    list-style: none;
+    color: black;
+}
+#login{
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+.header .search ul li {
+    font-size: 22px;
+}
+.header .search ul li a{
+    text-decoration: none;
+    margin-right: 20px;
+    
+}
+.header .search ul li .num{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    top: 20%;
+    right: 13%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .search ul li .num h2{
+    font-size: 14px;
+    color: white;
+}
+/* ==== num1 */
+.header .search ul li .num2{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .search ul li .num2 h2{
+    font-size: 14px;
+    color: white;
+}
+/* ========= */
+.home{
+    width: 100%;
+    height: 15vh;
+    /* background-color: red; */
+    padding: 10px 200px;
+}
+.home .go-home{
+    width: 20%;
+    height: 80%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+}
+.home .go-home ul li{
+    list-style: none;
+}
+.home .go-home ul li a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: black;
+}
+#house{
+    font-size: 11px;
+}
+.home .go-home p{
+    margin-right: 10px;
+}
+/* ============== Middle */
+.middle{
+    width: 100%;
+    height: 230vh;
+    background-color: rebeccapurple;
+    display: flex;
+    padding: 20px 200px;
+}
+.middle .left{
+    width: 29%;
+    height: 100%;
+    background-color: blue;
+    
+}
+.middle .right{
+    width: 71%;
+    height: 100%;
+    background-color: rgb(104, 104, 134);
+}
